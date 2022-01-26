@@ -41,13 +41,13 @@
   font-size: 18px;
 }
 
-.sidebar_stats {
+.sidebar_stat {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.sidebar_stat > a {
+.sidebar_stat > p {
   color: gray;
   font-size: 13px;
   font-weight: 600;

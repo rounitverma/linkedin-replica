@@ -7,6 +7,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Login from "./Login";
 import { auth } from "./firebase";
+import Widgets from "./Widgets";
 
 function App() {
   const user = useSelector(selectUser);
@@ -30,7 +31,7 @@ function App() {
   }, []);
   return (
     <div className="app">
-      <Header />
+      {user && <Header />}
 
       {!user ? (
         <Login />
@@ -38,6 +39,7 @@ function App() {
         <div className="app_body">
           <Sidebar />
           <Feed />
+          <Widgets />
         </div>
       )}
     </div>
